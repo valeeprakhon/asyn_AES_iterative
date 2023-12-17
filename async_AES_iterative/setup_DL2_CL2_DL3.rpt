@@ -1,0 +1,94 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Dec 13 21:35:50 2023
+| Host         : DESKTOP-29E3E9D running 64-bit major release  (build 9200)
+| Command      : report_timing -setup -no_report_unconstrained -file {D:\Circuit\AES\async_AES_iterative\setup_DL2_CL2_DL3.rpt}
+| Design       : AES
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.971ns  (required time - arrival time)
+  Source:                 DL_2/data_sig_reg[128]/C
+                            (rising edge-triggered cell FDCE clocked by STU1  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Destination:            DL_3/data_sig_reg[128]/D
+                            (rising edge-triggered cell FDCE clocked by STU1_1  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Path Group:             STU1_1
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            0.000ns  (STU1_1 rise@0.000ns - STU1 rise@0.000ns)
+  Data Path Delay:        2.008ns  (logic 0.550ns (27.396%)  route 1.458ns (72.604%))
+  Logic Levels:           5  (LUT1=3 LUT6=2)
+  Clock Path Skew:        2.945ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.204ns = ( 6.204 - 3.000 ) 
+    Source Clock Delay      (SCD):    0.259ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Timing Exception:       MultiCycle Path   Setup -end   0
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock STU1 rise edge)       0.000     0.000 r  
+                         LUT4                         0.000     0.000 r  DL_2/click_inferred_i_1/O
+                         net (fo=262, unplaced)       0.259     0.259    DL_2/click
+                         FDCE                                         r  DL_2/data_sig_reg[128]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.204     0.463 r  DL_2/data_sig_reg[128]/Q
+                         net (fo=32, unplaced)        0.460     0.923    CL_2/sub_bytes/gen[0].sbox_inst/input_byte[0]
+                         LUT6 (Prop_lut6_I0_O)        0.122     1.045 r  CL_2/sub_bytes/gen[0].sbox_inst/g2_b0/O
+                         net (fo=1, unplaced)         0.400     1.445    CL_2/sub_bytes/gen[0].sbox_inst/g2_b0_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.056     1.501 r  CL_2/sub_bytes/gen[0].sbox_inst/output_byte[0]_INST_0/O
+                         net (fo=1, unplaced)         0.199     1.700    CL_2/sub_bytes/subBytes[0]
+                         LUT1 (Prop_lut1_I0_O)        0.056     1.756 r  CL_2/sub_bytes/subBytes_inst__126/O
+                         net (fo=1, unplaced)         0.199     1.955    CL_2/shift_rows/plainText[0]
+                         LUT1 (Prop_lut1_I0_O)        0.056     2.011 r  CL_2/shift_rows/plainText_inst__126/O
+                         net (fo=1, unplaced)         0.199     2.211    CL_2/shift_rows/shiftRows[0]
+                         LUT1 (Prop_lut1_I0_O)        0.056     2.267 r  CL_2/shift_rows/shiftRows_inst__126/O
+                         net (fo=1, unplaced)         0.000     2.267    DL_3/in_data[128]
+                         FDCE                                         r  DL_3/data_sig_reg[128]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock STU1_1 rise edge)     0.000     0.000 r  
+                         LUT4                         0.000     0.000 r  DL_2/click_inferred_i_1/O
+                         net (fo=262, unplaced)       0.114     0.114    DL_2/click
+                         FDCE (Prop_fdce_C_Q)         0.164     0.278 r  DL_2/phase_out_reg/Q
+                         net (fo=3, unplaced)         0.139     0.417    CL_2/delay_req/s_connect[0]
+                         LUT1 (Prop_lut1_I0_O)        0.098     0.515 r  CL_2/delay_req/lut_chain[0].delay_lut/O
+                         net (fo=1, unplaced)         0.189     0.704    CL_2/delay_req/s_connect[1]
+                         LUT1 (Prop_lut1_I0_O)        0.045     0.749 r  CL_2/delay_req/lut_chain[1].delay_lut/O
+                         net (fo=1, unplaced)         0.130     0.879    CL_2/delay_req/s_connect[2]
+                         LUT1 (Prop_lut1_I0_O)        0.045     0.924 r  CL_2/delay_req/lut_chain[2].delay_lut/O
+                         net (fo=1, unplaced)         0.189     1.113    CL_2/delay_req/s_connect[3]
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.158 r  CL_2/delay_req/lut_chain[3].delay_lut/O
+                         net (fo=1, unplaced)         0.130     1.289    CL_2/delay_req/s_connect[4]
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.334 r  CL_2/delay_req/lut_chain[4].delay_lut/O
+                         net (fo=1, unplaced)         0.189     1.523    CL_2/delay_req/s_connect[5]
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.568 r  CL_2/delay_req/lut_chain[5].delay_lut/O
+                         net (fo=1, unplaced)         0.130     1.698    CL_2/delay_req/s_connect[6]
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.743 r  CL_2/delay_req/lut_chain[6].delay_lut/O
+                         net (fo=1, unplaced)         0.189     1.932    CL_2/delay_req/s_connect[7]
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.977 r  CL_2/delay_req/lut_chain[7].delay_lut/O
+                         net (fo=1, unplaced)         0.189     2.167    CL_2/delay_req/s_connect[8]
+                         LUT1 (Prop_lut1_I0_O)        0.045     2.212 r  CL_2/delay_req/lut_chain[8].delay_lut/O
+                         net (fo=1, unplaced)         0.189     2.401    CL_2/delay_req/s_connect[9]
+                         LUT1 (Prop_lut1_I0_O)        0.045     2.446 r  CL_2/delay_req/lut_chain[9].delay_lut/O
+                         net (fo=1, unplaced)         0.130     2.576    CL_2/delay_req/s_connect[10]
+                         LUT1 (Prop_lut1_I0_O)        0.045     2.621 r  CL_2/delay_req/lut_chain[10].delay_lut/O
+                         net (fo=1, unplaced)         0.189     2.811    CL_2/delay_req/s_connect[11]
+                         LUT1 (Prop_lut1_I0_O)        0.045     2.856 r  CL_2/delay_req/lut_chain[11].delay_lut/O
+                         net (fo=1, unplaced)         0.189     3.045    DL_3/in_req
+                         LUT4 (Prop_lut4_I0_O)        0.045     3.090 r  DL_3/click_inferred_i_1/O
+                         net (fo=262, unplaced)       0.114     3.204    DL_3/click
+                         FDCE                                         r  DL_3/data_sig_reg[128]/C
+                         clock pessimism              0.000     3.204    
+                         FDCE (Setup_fdce_C_D)        0.034     3.238    DL_3/data_sig_reg[128]
+  -------------------------------------------------------------------
+                         required time                          3.238    
+                         arrival time                          -2.267    
+  -------------------------------------------------------------------
+                         slack                                  0.971    
+
+
+
+

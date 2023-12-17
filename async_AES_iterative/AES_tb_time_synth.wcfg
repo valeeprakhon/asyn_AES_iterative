@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AES_tb_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="AES_tb" />
+            <top_module name="defs" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,542.001 ns"></ZoomEndTime>
+      <Cursor1Time time="100.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/AES_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/TOKEN_IN" type="array">
+      <obj_property name="ElementShortName">TOKEN_IN[259:0]</obj_property>
+      <obj_property name="ObjectShortName">TOKEN_IN[259:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/TOKEN_IN_REQ" type="logic">
+      <obj_property name="ElementShortName">TOKEN_IN_REQ</obj_property>
+      <obj_property name="ObjectShortName">TOKEN_IN_REQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/TOKEN_IN_ACK" type="logic">
+      <obj_property name="ElementShortName">TOKEN_IN_ACK</obj_property>
+      <obj_property name="ObjectShortName">TOKEN_IN_ACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/TOKEN_OUT" type="array">
+      <obj_property name="ElementShortName">TOKEN_OUT[259:0]</obj_property>
+      <obj_property name="ObjectShortName">TOKEN_OUT[259:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/TOKEN_OUT_REQ" type="logic">
+      <obj_property name="ElementShortName">TOKEN_OUT_REQ</obj_property>
+      <obj_property name="ObjectShortName">TOKEN_OUT_REQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/TOKEN_OUT_ACK" type="logic">
+      <obj_property name="ElementShortName">TOKEN_OUT_ACK</obj_property>
+      <obj_property name="ObjectShortName">TOKEN_OUT_ACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/temp_plan_text" type="array">
+      <obj_property name="ElementShortName">temp_plan_text[127:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_plan_text[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/temp_key" type="array">
+      <obj_property name="ElementShortName">temp_key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/temp_round" type="array">
+      <obj_property name="ElementShortName">temp_round[3:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_round[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/temp_out_key" type="array">
+      <obj_property name="ElementShortName">temp_out_key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_out_key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/temp_out_chiper_text" type="array">
+      <obj_property name="ElementShortName">temp_out_chiper_text[127:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_out_chiper_text[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/temp_out_round" type="array">
+      <obj_property name="ElementShortName">temp_out_round[3:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_out_round[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_1/add_round_key/keys" type="array">
+      <obj_property name="ElementShortName">keys[127:0]</obj_property>
+      <obj_property name="ObjectShortName">keys[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_1/add_round_key/plainText" type="array">
+      <obj_property name="ElementShortName">plainText[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plainText[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_1/add_round_key/round" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">round[3:0]</obj_property>
+      <obj_property name="ObjectShortName">round[3:0]</obj_property>
+      <obj_property name="label">round_loop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_1/add_round_key/keys" type="array">
+      <obj_property name="ElementShortName">keys[127:0]</obj_property>
+      <obj_property name="ObjectShortName">keys[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_1/add_round_key/plainText" type="array">
+      <obj_property name="ElementShortName">plainText[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plainText[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_4/add_round_key/round" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">round[3:0]</obj_property>
+      <obj_property name="ObjectShortName">round[3:0]</obj_property>
+      <obj_property name="label">round_CL4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_4/add_round_key/keys" type="array">
+      <obj_property name="ElementShortName">keys[127:0]</obj_property>
+      <obj_property name="ObjectShortName">keys[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_4/add_round_key/plainText" type="array">
+      <obj_property name="ElementShortName">plainText[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plainText[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_1/add_round_key/keys" type="array">
+      <obj_property name="ElementShortName">keys[127:0]</obj_property>
+      <obj_property name="ObjectShortName">keys[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_1/add_round_key/plainText" type="array">
+      <obj_property name="ElementShortName">plainText[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plainText[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_3/mix_columns/mixColumns" type="array">
+      <obj_property name="ElementShortName">mixColumns[127:0]</obj_property>
+      <obj_property name="ObjectShortName">mixColumns[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_1/add_round_key/roundKey" type="array">
+      <obj_property name="ElementShortName">roundKey[127:0]</obj_property>
+      <obj_property name="ObjectShortName">roundKey[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_4/add_round_key/keys" type="array">
+      <obj_property name="ElementShortName">keys[127:0]</obj_property>
+      <obj_property name="ObjectShortName">keys[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_4/add_round_key/plainText" type="array">
+      <obj_property name="ElementShortName">plainText[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plainText[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_4/add_round_key/roundKey" type="array">
+      <obj_property name="ElementShortName">roundKey[127:0]</obj_property>
+      <obj_property name="ObjectShortName">roundKey[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/DL_3/in_data" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in_data[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[259:0]</obj_property>
+      <obj_property name="label">subh out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/DL_7/out_data" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">out_data[259:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[259:0]</obj_property>
+      <obj_property name="label">subh out2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/DL_4/in_data" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in_data[259:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[259:0]</obj_property>
+      <obj_property name="label">MIX out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AES_tb/AES_module/CL_3/mix_columns/round" type="array">
+      <obj_property name="ElementShortName">round[3:0]</obj_property>
+      <obj_property name="ObjectShortName">round[3:0]</obj_property>
+   </wvobject>
+</wave_config>

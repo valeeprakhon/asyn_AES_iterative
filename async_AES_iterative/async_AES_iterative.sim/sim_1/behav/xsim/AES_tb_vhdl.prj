@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../async_AES_iterative.srcs/sources_1/new/defs.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/delay_element.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/add_round_key.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/round_increment.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/sbox.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/rcon.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/key_schedule.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/ADD.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/mux.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/reg_fork.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/round_check.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/fork.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/demux.vhd" \
+"../../../../async_AES_iterative.srcs/sources_1/new/AES.vhd" \
+"../../../../async_AES_iterative.srcs/sim_1/new/AES_tb.vhd" \
+
+# Do not sort compile order
+nosort

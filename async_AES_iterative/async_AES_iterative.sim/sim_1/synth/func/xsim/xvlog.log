@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Circuit/AES/async_AES_iterative/async_AES_iterative.sim/sim_1/synth/func/xsim/AES_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module AES
+INFO: [VRFC 10-311] analyzing module decoupled_hs_reg
+INFO: [VRFC 10-311] analyzing module decoupled_hs_reg_0
+INFO: [VRFC 10-311] analyzing module delay_element
+INFO: [VRFC 10-311] analyzing module glbl

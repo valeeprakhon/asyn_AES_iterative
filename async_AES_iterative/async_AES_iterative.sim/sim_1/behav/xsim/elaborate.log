@@ -1,0 +1,36 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Program/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot AES_tb_behav xil_defaultlib.AES_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.defs
+Compiling package std.env
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling architecture arch of entity xil_defaultlib.mux [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_fork [\reg_fork(data_width=260)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="10")(0,1)\]
+Compiling architecture lut of entity xil_defaultlib.delay_element [\delay_element(size=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.round_check [\round_check(value=11,delay_size...]
+Compiling architecture arch of entity xil_defaultlib.fork [fork_default]
+Compiling architecture behavioral of entity xil_defaultlib.decoupled_hs_reg [\decoupled_hs_reg(data_width=1,v...]
+Compiling architecture behavioral of entity xil_defaultlib.demux [demux_default]
+Compiling architecture behavioral of entity xil_defaultlib.decoupled_hs_reg [\decoupled_hs_reg(data_width=260...]
+Compiling architecture behavioral of entity xil_defaultlib.add_round_key [\add_round_key(data_width=260)\]
+Compiling architecture behavioral of entity xil_defaultlib.round_increment [\round_increment(data_width=260)...]
+Compiling architecture behavioral of entity xil_defaultlib.sbox [sbox_default]
+Compiling architecture behavioral of entity xil_defaultlib.rcon [rcon_default]
+Compiling architecture behavioral of entity xil_defaultlib.key_schedule [\key_schedule(data_width=260)\]
+Compiling architecture behavioral of entity xil_defaultlib.ADD [\ADD(data_width=260,delay_size=2...]
+Compiling architecture behavioral of entity xil_defaultlib.AES [aes_default]
+Compiling architecture behavioral of entity xil_defaultlib.aes_tb
+Built simulation snapshot AES_tb_behav

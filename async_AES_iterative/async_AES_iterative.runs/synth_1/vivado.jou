@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Dec 17 17:14:57 2023
+# Process ID: 25680
+# Current directory: D:/Circuit/AES/async_AES_iterative/async_AES_iterative.runs/synth_1
+# Command line: vivado.exe -log AES.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES.tcl
+# Log file: D:/Circuit/AES/async_AES_iterative/async_AES_iterative.runs/synth_1/AES.vds
+# Journal file: D:/Circuit/AES/async_AES_iterative/async_AES_iterative.runs/synth_1\vivado.jou
+# Running On: DESKTOP-29E3E9D, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 17115 MB
+#-----------------------------------------------------------
+source AES.tcl -notrace

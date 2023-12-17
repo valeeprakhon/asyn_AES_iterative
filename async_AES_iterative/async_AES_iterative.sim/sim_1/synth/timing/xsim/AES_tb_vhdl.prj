@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../async_AES_iterative.srcs/sources_1/new/defs.vhd" \
+"../../../../../async_AES_iterative.srcs/sim_1/new/AES_tb.vhd" \
+
+# Do not sort compile order
+nosort

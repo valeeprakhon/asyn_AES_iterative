@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/AES.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AES'

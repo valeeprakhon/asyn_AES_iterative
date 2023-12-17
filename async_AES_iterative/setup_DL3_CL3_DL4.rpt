@@ -1,0 +1,78 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Dec 13 21:35:43 2023
+| Host         : DESKTOP-29E3E9D running 64-bit major release  (build 9200)
+| Command      : report_timing -setup -no_report_unconstrained -file {D:\Circuit\AES\async_AES_iterative\setup_DL3_CL3_DL4.rpt}
+| Design       : AES
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.136ns  (required time - arrival time)
+  Source:                 DL_3/data_sig_reg[130]/C
+                            (rising edge-triggered cell FDCE clocked by STU1  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Destination:            DL_4/data_sig_reg[131]/D
+                            (rising edge-triggered cell FDCE clocked by STU1_1  {rise@0.000ns fall@1.500ns period=3.000ns})
+  Path Group:             STU1_1
+  Path Type:              Setup (Max at Fast Process Corner)
+  Requirement:            0.000ns  (STU1_1 rise@0.000ns - STU1 rise@0.000ns)
+  Data Path Delay:        1.321ns  (logic 0.502ns (38.012%)  route 0.819ns (61.988%))
+  Logic Levels:           4  (LUT1=1 LUT2=2 LUT4=1)
+  Clock Path Skew:        1.423ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.682ns = ( 4.682 - 3.000 ) 
+    Source Clock Delay      (SCD):    0.259ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Timing Exception:       MultiCycle Path   Setup -end   0
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock STU1 rise edge)       0.000     0.000 r  
+                         LUT4                         0.000     0.000 r  DL_3/click_inferred_i_1/O
+                         net (fo=262, unplaced)       0.259     0.259    DL_3/click
+                         FDCE                                         r  DL_3/data_sig_reg[130]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.204     0.463 r  DL_3/data_sig_reg[130]/Q
+                         net (fo=5, unplaced)         0.221     0.684    CL_3/mix_columns/mix_columns_inst0/in_data[2]
+                         LUT2 (Prop_lut2_I0_O)        0.122     0.806 r  CL_3/mix_columns/mix_columns_inst0/gfmult_by2_inst0_i_3/O
+                         net (fo=1, unplaced)         0.199     1.005    CL_3/mix_columns/mix_columns_inst0/gfmult_by2_inst0/input_byte[2]
+                         LUT2 (Prop_lut2_I1_O)        0.060     1.065 r  CL_3/mix_columns/mix_columns_inst0/gfmult_by2_inst0/output_byte[3]_INST_0/O
+                         net (fo=1, unplaced)         0.199     1.264    CL_3/mix_columns/mix_columns_inst0/temp0x2[3]
+                         LUT4 (Prop_lut4_I0_O)        0.060     1.324 r  CL_3/mix_columns/mix_columns_inst0/out_data[3]_INST_0/O
+                         net (fo=1, unplaced)         0.199     1.524    CL_3/mix_columns/mixColumns[3]
+                         LUT1 (Prop_lut1_I0_O)        0.056     1.580 r  CL_3/mix_columns/mixColumns_inst__123/O
+                         net (fo=1, unplaced)         0.000     1.580    DL_4/in_data[131]
+                         FDCE                                         r  DL_4/data_sig_reg[131]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock STU1_1 rise edge)     0.000     0.000 r  
+                         LUT4                         0.000     0.000 r  DL_3/click_inferred_i_1/O
+                         net (fo=262, unplaced)       0.114     0.114    DL_3/click
+                         FDCE (Prop_fdce_C_Q)         0.164     0.278 r  DL_3/phase_out_reg/Q
+                         net (fo=3, unplaced)         0.139     0.417    CL_3/delay_req/s_connect[0]
+                         LUT1 (Prop_lut1_I0_O)        0.098     0.515 r  CL_3/delay_req/lut_chain[0].delay_lut/O
+                         net (fo=1, unplaced)         0.189     0.704    CL_3/delay_req/s_connect[1]
+                         LUT1 (Prop_lut1_I0_O)        0.045     0.749 r  CL_3/delay_req/lut_chain[1].delay_lut/O
+                         net (fo=1, unplaced)         0.130     0.879    CL_3/delay_req/s_connect[2]
+                         LUT1 (Prop_lut1_I0_O)        0.045     0.924 r  CL_3/delay_req/lut_chain[2].delay_lut/O
+                         net (fo=1, unplaced)         0.189     1.113    CL_3/delay_req/s_connect[3]
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.158 r  CL_3/delay_req/lut_chain[3].delay_lut/O
+                         net (fo=1, unplaced)         0.130     1.289    CL_3/delay_req/s_connect[4]
+                         LUT1 (Prop_lut1_I0_O)        0.045     1.334 r  CL_3/delay_req/lut_chain[4].delay_lut/O
+                         net (fo=1, unplaced)         0.189     1.523    DL_4/in_req
+                         LUT4 (Prop_lut4_I0_O)        0.045     1.568 r  DL_4/click_inferred_i_1/O
+                         net (fo=262, unplaced)       0.114     1.682    DL_4/click
+                         FDCE                                         r  DL_4/data_sig_reg[131]/C
+                         clock pessimism              0.000     1.682    
+                         FDCE (Setup_fdce_C_D)        0.034     1.716    DL_4/data_sig_reg[131]
+  -------------------------------------------------------------------
+                         required time                          1.716    
+                         arrival time                          -1.580    
+  -------------------------------------------------------------------
+                         slack                                  0.136    
+
+
+
+

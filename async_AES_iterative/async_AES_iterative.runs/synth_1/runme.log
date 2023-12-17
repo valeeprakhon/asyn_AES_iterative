@@ -1,0 +1,557 @@
+
+*** Running vivado
+    with args -log AES.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source AES.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/utils_1/imports/synth_1/AES.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/utils_1/imports/synth_1/AES.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top AES -part xc7z020clg400-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23224
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1855.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AES' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/AES.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'mux' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/mux.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'mux' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/mux.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'reg_fork' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/reg_fork.vhd:36]
+	Parameter PHASE_INIT_A bound to: 1'b0 
+	Parameter PHASE_INIT_B bound to: 1'b0 
+	Parameter PHASE_INIT_C bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'reg_fork' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/reg_fork.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'round_check' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/round_check.vhd:23]
+	Parameter VALUE bound to: 9 - type: integer 
+	Parameter DELAY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay_element' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:18]
+	Parameter size bound to: 20 - type: integer 
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+	Parameter init bound to: 2'b10 
+INFO: [Synth 8-3491] module 'LUT1' declared at 'D:/Program/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62648' bound to instance 'delay_lut' of component 'lut1' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'delay_element' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/delay_element.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'round_check' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/round_check.vhd:23]
+INFO: [Synth 8-638] synthesizing module '\fork ' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/fork.vhd:26]
+INFO: [Synth 8-256] done synthesizing module '\fork ' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/fork.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'decoupled_hs_reg' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:27]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter VALUE bound to: 1 - type: integer 
+	Parameter PHASE_INIT_IN bound to: 1'b0 
+	Parameter PHASE_INIT_OUT bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'decoupled_hs_reg' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'demux' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/demux.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'demux' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/demux.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'decoupled_hs_reg__parameterized0' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:27]
+	Parameter PHASE_INIT_IN bound to: 1'b0 
+	Parameter PHASE_INIT_OUT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'decoupled_hs_reg__parameterized0' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'ADD' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/ADD.vhd:22]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+	Parameter DELAY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'add_round_key' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/add_round_key.vhd:17]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'add_round_key' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/add_round_key.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'round_increment' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/round_increment.vhd:19]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'round_increment' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/round_increment.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'key_schedule' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/key_schedule.vhd:20]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sbox' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/sbox.vhd:11]
+INFO: [Synth 8-226] default block is never used [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/sbox.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'sbox' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/sbox.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'rcon' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/rcon.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'rcon' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/rcon.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'key_schedule' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/key_schedule.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ADD' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/ADD.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'SUBH' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/SUBH.vhd:22]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+	Parameter DELAY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sub_bytes' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/sub_bytes.vhd:17]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sub_bytes' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/sub_bytes.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'shift_rows' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/shift_rows.vhd:17]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift_rows' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/shift_rows.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'SUBH' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/SUBH.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'MIX' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/MIX.vhd:22]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+	Parameter DELAY_SIZE bound to: 20 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mix_columns' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/mix_columns.vhd:16]
+	Parameter DATA_WIDTH bound to: 260 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'column_calculator' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/column_calculator.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'gfmult_by2' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/gfmult_by2.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'gfmult_by2' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/gfmult_by2.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'column_calculator' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/column_calculator.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mix_columns' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/mix_columns.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'MIX' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/MIX.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'AES' (0#1) [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/AES.vhd:22]
+WARNING: [Synth 8-7129] Port in_data[255] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[254] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[253] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[252] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[251] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[250] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[249] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[248] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[247] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[246] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[245] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[244] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[243] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[242] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[241] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[240] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[239] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[238] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[237] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[236] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[235] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[234] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[233] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[232] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[231] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[230] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[229] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[228] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[227] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[226] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[225] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[224] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[223] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[222] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[221] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[220] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[219] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[218] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[217] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[216] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[215] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[214] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[213] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[212] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[211] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[210] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[209] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[208] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[207] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[206] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[205] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[204] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[203] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[202] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[201] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[200] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[199] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[198] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[197] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[196] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[195] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[194] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[193] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[192] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[191] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[190] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[189] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[188] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[187] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[186] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[185] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[184] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[183] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[182] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[181] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[180] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[179] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[178] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[177] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[176] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[175] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[174] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[173] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[172] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[171] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[170] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[169] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[168] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[167] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[166] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[165] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[164] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[163] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[162] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[161] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[160] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[159] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[158] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[157] in module round_check is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_data[156] in module round_check is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1855.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1855.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+WARNING: [Synth 8-327] inferring latch for variable 'output_byte_reg' [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/rcon.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1855.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   2 Input    128 Bit         XORs := 3     
+	   2 Input     32 Bit         XORs := 9     
+	   2 Input     24 Bit         XORs := 3     
+	   3 Input      8 Bit         XORs := 19    
+	   2 Input      8 Bit         XORs := 36    
+	   2 Input      1 Bit         XORs := 31    
++---Registers : 
+	              260 Bit    Registers := 9     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input  260 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:23 . Memory (MB): peak = 1935.598 ; gain = 80.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
+|sbox        | output_byte | 256x8         | LUT            | 
++------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:24 . Memory (MB): peak = 1935.598 ; gain = 80.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:26 . Memory (MB): peak = 1935.598 ; gain = 80.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin req_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ack_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin req_inferred:in0 to constant 0
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/mux.vhd:56]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/mux.vhd:57]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/reg_fork.vhd:51]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/fork.vhd:42]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/demux.vhd:61]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/demux.vhd:56]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Circuit/AES/async_AES_iterative/async_AES_iterative.srcs/sources_1/new/decoupled_hs_reg.vhd:40]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1935.598 ; gain = 80.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1935.598 ; gain = 80.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1935.598 ; gain = 80.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |  2914|
+|2     |LUT2 |   577|
+|3     |LUT3 |   364|
+|4     |LUT4 |   182|
+|5     |LUT5 |   176|
+|6     |LUT6 |  1786|
+|7     |FDCE |  2368|
+|8     |FDPE |     2|
+|9     |LD   |    24|
+|10    |IBUF |   263|
+|11    |OBUF |   262|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------------------+------------------------------------+------+
+|      |Instance                  |Module                              |Cells |
++------+--------------------------+------------------------------------+------+
+|1     |top                       |                                    |  8918|
+|2     |  MX_0                    |mux                                 |   270|
+|3     |  LF_0                    |reg_fork                            |   267|
+|4     |  CL_0                    |round_check                         |    22|
+|5     |    delay_req             |delay_element__1                    |    20|
+|6     |  F_0                     |\fork                               |     3|
+|7     |  DL_0                    |decoupled_hs_reg                    |     6|
+|8     |  DX_0                    |demux                               |     8|
+|9     |  DL_1                    |decoupled_hs_reg__parameterized0__1 |   265|
+|10    |  CL_1                    |ADD__1                              |   853|
+|11    |    delay_req             |delay_element__4                    |    20|
+|12    |    add_round_key         |add_round_key__1                    |   388|
+|13    |    round_increment       |round_increment__1                  |     8|
+|14    |    key_schedule          |key_schedule__1                     |   305|
+|15    |      \gen[12].sbox_inst  |sbox__23                            |    40|
+|16    |      \gen[13].sbox_inst  |sbox__22                            |    40|
+|17    |      \gen[14].sbox_inst  |sbox__21                            |    40|
+|18    |      \gen[15].sbox_inst  |sbox__20                            |    40|
+|19    |      rcon_0              |rcon__1                             |    17|
+|20    |  DL_2                    |decoupled_hs_reg__parameterized0__2 |   265|
+|21    |  CL_2                    |SUBH__1                             |  1308|
+|22    |    delay_req             |delay_element__6                    |    20|
+|23    |    sub_bytes             |sub_bytes__1                        |   900|
+|24    |      \gen[0].sbox_inst   |sbox__43                            |    40|
+|25    |      \gen[1].sbox_inst   |sbox__42                            |    40|
+|26    |      \gen[2].sbox_inst   |sbox__41                            |    40|
+|27    |      \gen[3].sbox_inst   |sbox__40                            |    40|
+|28    |      \gen[4].sbox_inst   |sbox__39                            |    40|
+|29    |      \gen[5].sbox_inst   |sbox__38                            |    40|
+|30    |      \gen[6].sbox_inst   |sbox__37                            |    40|
+|31    |      \gen[7].sbox_inst   |sbox__36                            |    40|
+|32    |      \gen[8].sbox_inst   |sbox__35                            |    40|
+|33    |      \gen[9].sbox_inst   |sbox__34                            |    40|
+|34    |      \gen[10].sbox_inst  |sbox__33                            |    40|
+|35    |      \gen[11].sbox_inst  |sbox__32                            |    40|
+|36    |      \gen[12].sbox_inst  |sbox__31                            |    40|
+|37    |      \gen[13].sbox_inst  |sbox__30                            |    40|
+|38    |      \gen[14].sbox_inst  |sbox__29                            |    40|
+|39    |      \gen[15].sbox_inst  |sbox__28                            |    40|
+|40    |    shift_rows            |shift_rows__1                       |   388|
+|41    |  DL_3                    |decoupled_hs_reg__parameterized0__3 |   265|
+|42    |  CL_3                    |MIX                                 |   522|
+|43    |    delay_req             |delay_element                       |    20|
+|44    |    mix_columns           |mix_columns                         |   502|
+|45    |      mix_columns_inst0   |column_calculator__1                |    60|
+|46    |        gfmult_by2_inst0  |gfmult_by2__7                       |     3|
+|47    |        gfmult_by2_inst1  |gfmult_by2__6                       |     3|
+|48    |        gfmult_by2_inst2  |gfmult_by2__5                       |     3|
+|49    |        gfmult_by2_inst3  |gfmult_by2__4                       |     3|
+|50    |      mix_columns_inst1   |column_calculator__2                |    60|
+|51    |        gfmult_by2_inst0  |gfmult_by2__11                      |     3|
+|52    |        gfmult_by2_inst1  |gfmult_by2__10                      |     3|
+|53    |        gfmult_by2_inst2  |gfmult_by2__9                       |     3|
+|54    |        gfmult_by2_inst3  |gfmult_by2__8                       |     3|
+|55    |      mix_columns_inst2   |column_calculator__3                |    60|
+|56    |        gfmult_by2_inst0  |gfmult_by2__15                      |     3|
+|57    |        gfmult_by2_inst1  |gfmult_by2__14                      |     3|
+|58    |        gfmult_by2_inst2  |gfmult_by2__13                      |     3|
+|59    |        gfmult_by2_inst3  |gfmult_by2__12                      |     3|
+|60    |      mix_columns_inst3   |column_calculator                   |    60|
+|61    |        gfmult_by2_inst0  |gfmult_by2__1                       |     3|
+|62    |        gfmult_by2_inst1  |gfmult_by2__2                       |     3|
+|63    |        gfmult_by2_inst2  |gfmult_by2__3                       |     3|
+|64    |        gfmult_by2_inst3  |gfmult_by2                          |     3|
+|65    |  DL_4                    |decoupled_hs_reg__parameterized0__4 |   265|
+|66    |  DL_5                    |decoupled_hs_reg__parameterized0__5 |   265|
+|67    |  CL_4                    |ADD__2                              |   853|
+|68    |    delay_req             |delay_element__5                    |    20|
+|69    |    add_round_key         |add_round_key__2                    |   388|
+|70    |    round_increment       |round_increment__2                  |     8|
+|71    |    key_schedule          |key_schedule__2                     |   305|
+|72    |      \gen[12].sbox_inst  |sbox__27                            |    40|
+|73    |      \gen[13].sbox_inst  |sbox__26                            |    40|
+|74    |      \gen[14].sbox_inst  |sbox__25                            |    40|
+|75    |      \gen[15].sbox_inst  |sbox__24                            |    40|
+|76    |      rcon_0              |rcon__2                             |    17|
+|77    |  DL_6                    |decoupled_hs_reg__parameterized0__6 |   265|
+|78    |  CL_5                    |SUBH                                |  1308|
+|79    |    delay_req             |delay_element__3                    |    20|
+|80    |    sub_bytes             |sub_bytes                           |   900|
+|81    |      \gen[0].sbox_inst   |sbox__5                             |    40|
+|82    |      \gen[1].sbox_inst   |sbox__6                             |    40|
+|83    |      \gen[2].sbox_inst   |sbox__7                             |    40|
+|84    |      \gen[3].sbox_inst   |sbox__8                             |    40|
+|85    |      \gen[4].sbox_inst   |sbox__9                             |    40|
+|86    |      \gen[5].sbox_inst   |sbox__10                            |    40|
+|87    |      \gen[6].sbox_inst   |sbox__11                            |    40|
+|88    |      \gen[7].sbox_inst   |sbox__12                            |    40|
+|89    |      \gen[8].sbox_inst   |sbox__13                            |    40|
+|90    |      \gen[9].sbox_inst   |sbox__14                            |    40|
+|91    |      \gen[10].sbox_inst  |sbox__15                            |    40|
+|92    |      \gen[11].sbox_inst  |sbox__16                            |    40|
+|93    |      \gen[12].sbox_inst  |sbox__17                            |    40|
+|94    |      \gen[13].sbox_inst  |sbox__18                            |    40|
+|95    |      \gen[14].sbox_inst  |sbox__19                            |    40|
+|96    |      \gen[15].sbox_inst  |sbox                                |    40|
+|97    |    shift_rows            |shift_rows                          |   388|
+|98    |  DL_7                    |decoupled_hs_reg__parameterized0__7 |   265|
+|99    |  CL_6                    |ADD                                 |   853|
+|100   |    delay_req             |delay_element__2                    |    20|
+|101   |    add_round_key         |add_round_key                       |   388|
+|102   |    round_increment       |round_increment                     |     8|
+|103   |    key_schedule          |key_schedule                        |   305|
+|104   |      \gen[12].sbox_inst  |sbox__1                             |    40|
+|105   |      \gen[13].sbox_inst  |sbox__2                             |    40|
+|106   |      \gen[14].sbox_inst  |sbox__3                             |    40|
+|107   |      \gen[15].sbox_inst  |sbox__4                             |    40|
+|108   |      rcon_0              |rcon                                |    17|
+|109   |  DL_8                    |decoupled_hs_reg__parameterized0    |   265|
++------+--------------------------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1935.598 ; gain = 80.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 532 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1935.598 ; gain = 80.359
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1935.598 ; gain = 80.359
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1938.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1965.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  LD => LDCE: 24 instances
+
+Synth Design complete, checksum: 945ec5cc
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:37 . Memory (MB): peak = 1965.816 ; gain = 110.578
+INFO: [Common 17-1381] The checkpoint 'D:/Circuit/AES/async_AES_iterative/async_AES_iterative.runs/synth_1/AES.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AES_utilization_synth.rpt -pb AES_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 17 17:16:44 2023...
